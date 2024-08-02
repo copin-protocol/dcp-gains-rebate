@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.6"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:rebate:testnet": "hardhat run scripts/deploy/1_deploy_DCPRebate.ts --network testnet",
+    "deploy:rebate:mainnet": "hardhat run scripts/deploy/1_deploy_DCPRebate.ts --network mainnet",
+    "deploy:ERC20": "hardhat run scripts/deploy/2_deploy_ERC20.ts --network testnet",
+    "interact:updateRebate": "hardhat run scripts/interact/updateRebate.ts --network testnet",
+    "interact:getCurrentEpochId": "hardhat run scripts/interact/getCurrentEpochId.ts --network testnet",
+    "interact:getClaimedFee": "hardhat run scripts/interact/getClaimedFee.ts --network testnet",
+    "interact:getOngoingFees": "hardhat run scripts/interact/getOngoingFees.ts --network testnet",
+    "interact:getClaimableFees": "hardhat run scripts/interact/getClaimableFees.ts --network testnet",
+    "interact:getTraderStatus": "hardhat run scripts/interact/getTraderStatus.ts --network testnet",
+    "interact:setOperator": "hardhat run scripts/interact/setOperator.ts --network testnet",
+    "interact:setPayer": "hardhat run scripts/interact/setPayer.ts --network testnet",
+    "verify": "hardhat verify --network mainnet"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
