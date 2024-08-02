@@ -1,6 +1,6 @@
-# Sample Hardhat Project
+# DCP Gains Rebate
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project contains the smart contract that uses for the program: "10,000 ARB Incentives For Decentralized Copy-Trading Fee Rebates".
 
 Try running some of the following tasks:
 
@@ -9,5 +9,4 @@ npx hardhat help
 npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
 ```
